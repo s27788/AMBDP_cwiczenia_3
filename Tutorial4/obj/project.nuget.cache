@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fsndEsziyqQ=",
+  "dgSpecHash": "jUmECQP1iEA=",
   "success": true,
   "projectFilePath": "/Users/lidiakongiel/Desktop/PJATK sem 6/APBD/Tutorial4/Tutorial4/Tutorial4.csproj",
-  "expectedPackageFiles": [
-    "/Users/lidiakongiel/.nuget/packages/microsoft.netcore.app.ref/8.0.13/microsoft.netcore.app.ref.8.0.13.nupkg.sha512",
-    "/Users/lidiakongiel/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.13/microsoft.aspnetcore.app.ref.8.0.13.nupkg.sha512",
-    "/Users/lidiakongiel/.nuget/packages/microsoft.netcore.app.host.osx-arm64/8.0.13/microsoft.netcore.app.host.osx-arm64.8.0.13.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }
