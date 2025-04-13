@@ -156,8 +156,15 @@ public class EmpDeptSalgradeTests
     {
         var emps = Database.GetEmps();
 
-        // var result = null; 
-        //
-        // Assert.Contains("ALLEN", result);
+        var avgSalariesByDept = emps
+            .GroupBy(e => e.DeptNo)
+            .ToDictionary(g => g.Key, g => g.Average(e => e.Sal));
+
+        var result = emps
+            .Where(e => avgSalariesByDept.ContainsKey(e.DeptNo) && e.Sal > avgSalariesByDept[e.DeptNo])
+            .Select(e => e.EName)
+            .ToList();
+
+        Assert.Contains("ALLEN", result);
     }
 }
