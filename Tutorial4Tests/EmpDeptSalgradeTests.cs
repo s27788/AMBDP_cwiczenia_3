@@ -59,13 +59,15 @@ public class EmpDeptSalgradeTests
     {
         var emps = Database.GetEmps();
 
-        //var result = null; 
-        
-        // Assert.All(result, r =>
-        // {
-        //     Assert.False(string.IsNullOrWhiteSpace(r.EName));
-        //     Assert.True(r.Sal > 0);
-        // });
+        var result = emps
+            .Select(e => new { e.EName, e.Sal })
+            .ToList();
+
+        Assert.All(result, r =>
+        {
+            Assert.False(string.IsNullOrWhiteSpace(r.EName));
+            Assert.True(r.Sal > 0);
+        });
     }
 
     // 5. JOIN Emp to Dept
